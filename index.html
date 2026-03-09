@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fotogram</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="./fonts/climate-crisis-v14-latin-regular.woff2"
+    />
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+  </head>
+  <body onload="renderImgOnload()">
+    <section class="section-header">
+      <header class="main-header">
+        <img
+          class="logo-img"
+          src="./img/Fotogram_Logo.svg"
+          alt="Logo of the website, depicting a colorful flower and the name"
+        />
+      </header>
+    </section>
+
+    <main>
+      <section class="section-h1">
+        <h1>Your personal photo album</h1>
+      </section>
+
+      <section id="imgContainer" class="gallery-section"></section>
+
+      <dialog id="dialogImgPopup">
+        <header class="dialog-header">
+          <div id="dialogHeader"></div>
+          <button
+            role="closing-dialog"
+            class="dialog-btns"
+            onclick="closeDialog()"
+          >
+            <img class="btn-img" src="./img/closebtn.png" alt="x Button" />
+          </button>
+        </header>
+        <div id="DialogImgRenderedBig"></div>
+        <footer class="dialog-footer">
+          <div id="backBtnContainer"></div>
+          <div id="dialogImgCounterContainer"></div>
+          <div id="forthBtnContainer"></div>
+        </footer>
+      </dialog>
+    </main>
+
+    <section class="section-footer">
+      <footer class="main-footer">
+        <img
+          class="logo-img"
+          src="./img/Fotogram_Logo.svg"
+          alt="Logo of the website, depicting a flower and the name"
+        />
+      </footer>
+    </section>
+  </body>
+</html>
